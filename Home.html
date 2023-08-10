@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vstar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar fixed-top "style="background-color: #343a40 !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="http://vstarweb.in/Imgs/logo.svg" alt="Logo" width="40" height="34" class="d-inline-block align-text-top"  style="padding-bottom: 10px;">
+                <span style="    color: white;
+                font-weight: 700;
+                font-size: 1.6rem;
+                letter-spacing: 2px;">Forecast</span>
+              </a>
+             
+              <span id="userName" style="color: white; margin-left: auto; font-size: 1.5rem; margin-right: 23px; cursor: pointer;">
+                <i id="fullscreen-icon" class="bi bi-fullscreen" style="margin-right: 5px;"></i>
+                <i class="bi bi-person-fill"><span style="font-style: normal;">username</span></i>
+                
+              </span>
+
+
+          <button  style="background: white;
+          border: none;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #343a40;">
+            <div class="offcanvas-header" style="color: white;">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 2rem;
+              font-weight: 600;
+              letter-spacing: 3px;"> 
+                <img src="http://vstarweb.in/Imgs/logo.svg" alt="Logo" width="40" height="34" class="d-inline-block align-text-top" >
+              
+              vstar</h5>
+              <button style="background: #343a40" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i style="color: white;" class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" id="navlink" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navlink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Master
+                  </a>
+                  <ul class="dropdown-menu" id="navitemDropdown">
+                    <li id="dropdownBox"><a class="dropdown-item" href="#" id="dropdownItem">NP Forecast</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li  id="dropdownBox"><a class="dropdown-item"  id="dropdownItem" href="#">Reference</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li id="dropdownBox">
+                    <li id="dropdownBox"><a class="dropdown-item"  id="dropdownItem" href="#">Employee</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navlink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Forecast
+                  </a>
+                  <ul class="dropdown-menu"  id="navitemDropdown">
+                    <li id="dropdownBox"><a class="dropdown-item" id="dropdownItem" href="#">Region Wise</a></li><li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item"  id="dropdownItem" href="#">NP Style Wise</a></li><li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item"  id="dropdownItem" href="#">New Product-DB</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item" id="dropdownItem" href="#">Catagory Wise</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item"  id="dropdownItem"href="#">SE Allotment</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item" id="dropdownItem" href="#">Executivewise</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item" id="dropdownItem" href="#">COCO Forecast</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item"  id="dropdownItem"href="#">Institution Forecast</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item" id="dropdownItem" href="#">Export Forecast</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item" id="dropdownItem" href="#">Online Forecast</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item"  id="dropdownItem" href="#">Submit For Approval</a></li>
+                 </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navlink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Approval
+                  </a>
+                  <ul class="dropdown-menu"  id="navitemDropdown">
+                    <li id="dropdownBox"><a class="dropdown-item" href="#"  id="dropdownItem">Region Wise</a></li>
+                 </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navlink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Reports
+                  </a>
+                  <ul class="dropdown-menu"  id="navitemDropdown">
+                    <li id="dropdownBox"><a class="dropdown-item" id="dropdownItem" href="#">SE Forecast Report</a></li><li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item" id="dropdownItem" href="#">Style Wise Target</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li id="dropdownBox"><a class="dropdown-item" id="dropdownItem" href="#">Forecast Variation</a></li>
+                 </ul>
+                </li>
+              </ul>
+              <a href="index.html" style="text-decoration: none; color: black;">
+                <div style="    text-align: center;
+                margin: 53px;
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            ">
+                        <i  class="bi bi-box-arrow-left" style="    background-color: #cfd3d7;
+                        padding: 7px;
+                        font-size: 1.4rem;
+                        border-radius: 6px;
+                        font-weight: 800;
+                        margin: 10px;">  <span style="font-style: normal;">Logout</span></i>
+                </div>
+          
+              </a>
+             
+            </div>
+           
+
+          </div>
+        </div>
+      </nav>
+
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const fullscreenIcon = document.getElementById("fullscreen-icon");
+      
+          fullscreenIcon.addEventListener("click", function () {
+            toggleFullScreen();
+          });
+      
+          function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+              if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+              } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+              } else if (document.documentElement.webkitRequestFullscreen) {
+                document.documentElement.webkitRequestFullscreen();
+              } else if (document.documentElement.msRequestFullscreen) {
+                document.documentElement.msRequestFullscreen();
+              }
+              fullscreenIcon.classList.remove("bi-fullscreen");
+              fullscreenIcon.classList.add("bi-fullscreen-exit");
+            } else {
+              if (document.exitFullscreen) {
+                document.exitFullscreen();
+              } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+              } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+              } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+              }
+              fullscreenIcon.classList.remove("bi-fullscreen-exit");
+              fullscreenIcon.classList.add("bi-fullscreen");
+            }
+          }
+        });
+      </script>
+      
+    
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>
