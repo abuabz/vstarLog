@@ -17,6 +17,8 @@ body {
     margin: 10%;
     color: white;
     border-radius: 10px;
+    margin-top: 30px;
+
 }
 
 .loginDiv{
@@ -41,7 +43,11 @@ body {
     background-size: cover;
     border-radius: 10px;
 }
-
+#logologin{
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    padding: 18px;
+}
 .mail{
 
     background: rgb(255 255 255 / 56%);
@@ -160,7 +166,8 @@ body {
     border-radius: 6px;
     color: rgb(255, 255, 255);
 }
-  
+
+
 #navitemDropdown{
     background: none;
     border: none;
@@ -187,6 +194,11 @@ body {
         margin: 10%;
         color: white;
         border-radius: 0px;
+    }
+    #logologin{
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 18px;
     }
     .row{
         border-radius: 0px;
