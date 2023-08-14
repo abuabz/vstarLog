@@ -173,6 +173,14 @@ body {
     border: none;
     padding: 15px;
 }
+.navbar {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-hide {
+    transform: translateY(-100%);
+  }
+  
 @media(max-width:999px){
     .row {
         --bs-gutter-x: 1.5rem;
